@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
               style: Theme.of(context).textTheme.headline4,
             ),
             ElevatedButton(onPressed: () {
-              Provider.of<Counter>(context, listen: false).incrementCounter();
+              consumer.incrementCounter();
             }, child: Text('Increment')),
             Container(
               margin: EdgeInsets.only(top: 120),
